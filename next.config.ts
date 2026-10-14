@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  output: "export",
-  basePath: "/eka-website",
-  assetPrefix: "/eka-website",
-  trailingSlash: true,
+const nextConfig: NextConfig = {
+  output: "standalone",
+  outputFileTracingRoot: process.cwd(),
   images: {
     unoptimized: true,
   },

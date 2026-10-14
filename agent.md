@@ -443,3 +443,4 @@ After implementation, provide:
 5. Any tests performed and remaining limitations.
 
 **Final design goal:** When visitors open the EKA website, they should immediately feel the warmth of Kerala's traditional coconut oil-making heritage. The website should look like a genuine, established regional brand with a timeless identity, clear product selection, and a convenient WhatsApp ordering experience.
+.....

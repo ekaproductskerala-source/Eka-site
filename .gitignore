@@ -4,4 +4,6 @@ node_modules/
 *.tsbuildinfo
 .DS_Store
 .out/
-.next-root-build-backup
+.next-root-build-backup/
+.next-sudo-backup-cloudrun/
+build-root-build-backup/

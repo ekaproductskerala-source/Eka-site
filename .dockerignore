@@ -1,0 +1,12 @@
+node_modules
+.next
+.next-eka
+out
+build
+build-root-build-backup/
+.next-root-build-backup/
+.next-sudo-backup-cloudrun/
+.git
+.npm-cache
+*.tsbuildinfo
+.DS_Store
