@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9dfc9"/><stop offset="1" stop-color="#d5c5a3"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c97d2f"/><stop offset=".32" stop-color="#f2c364"/><stop offset=".75" stop-color="#d89a42"/><stop offset="1" stop-color="#95602c"/></linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h900v1000H0z"/><path fill="#64704d" fill-opacity=".45" d="M0 0h233v1000H0z"/>
+  <path d="M0 671c201-98 397-67 900 17v312H0V671Z" fill="#ad7043"/>
+  <path d="M343 256h214v118c0 27 73 51 90 106l43 350c11 93-43 137-144 137H354c-100 0-156-44-144-137l43-350c17-55 90-79 90-106V256Z" fill="url(#glass)" stroke="#794b27" stroke-width="15"/>
+  <path d="M350 256h200v98H350z" fill="#496142"/><path d="M376 196h148v93H376z" fill="#3e3527"/><path d="M369 189h162v34H369z" fill="#83704c"/>
+  <path d="M286 553h329v206H286z" fill="#f5efdc" stroke="#af8c4e" stroke-width="8"/>
+  <path d="M314 584h273v141H314z" fill="#31513c"/>
+  <text x="450" y="650" fill="#f4e8c8" font-family="Georgia,serif" font-size="53" text-anchor="middle" letter-spacing="8">EKA</text>
+  <path d="M380 680h140" stroke="#c2a66d" stroke-width="3"/><text x="450" y="708" fill="#f4e8c8" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" letter-spacing="3">COCONUT OIL</text>
+  <path d="M270 440c-18 86-34 217-41 319" stroke="#fff0c6" stroke-opacity=".42" stroke-width="18" stroke-linecap="round"/>
+</svg>
