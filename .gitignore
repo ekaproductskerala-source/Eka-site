@@ -7,3 +7,4 @@ node_modules/
 .next-root-build-backup/
 .next-sudo-backup-cloudrun/
 build-root-build-backup/
+!package-lock.json
