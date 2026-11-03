@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { type ImageProps } from "next/image";
 
 interface ArtPlaceholderProps {
-  src: string;
+  src: ImageProps["src"];
   alt: string;
   label: string;
   className?: string;

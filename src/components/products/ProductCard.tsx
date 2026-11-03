@@ -11,7 +11,7 @@ import { QuantitySelector } from "@/components/products/QuantitySelector";
 const product = products[0];
 
 export function ProductCard() {
-  const [variantId, setVariantId] = useState(product.variants[2].id);
+  const [variantId, setVariantId] = useState(product.variants[0].id);
   const [quantity, setQuantity] = useState(1);
   const { addItem, openCart } = useCart();
   const variant =

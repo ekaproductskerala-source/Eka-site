@@ -1,9 +1,10 @@
 export const siteConfig = {
   name: "EKA",
   tagline: "The Taste of Real Kerala",
-  whatsappNumber: "919663802694",
-  email: "",
-  address: "",
+  whatsappNumber: "919986893369",
+  email: "ekaproductskerala@gmail.com",
+  address:
+    "Thayyullathil,383/A/3,Kottiyamvelly Road,Villiappally,Kozhikode,Kerala,India",
   businessHours: "",
   socialLinks: {
     instagram: "",

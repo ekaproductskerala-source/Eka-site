@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { ArtPlaceholder } from "@/components/home/ArtPlaceholder";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import proudctImage from "../../../public/images/product-home-2.png";
 
 export function BrandStory() {
   return (
@@ -11,9 +12,9 @@ export function BrandStory() {
     >
       <div className="story-section__image-column">
         <ArtPlaceholder
-          src="/images/eka-story-placeholder.svg"
-          alt="Illustrated placeholder of a Kerala home, coconut palm and courtyard"
-          label="Illustration placeholder — add an EKA heritage photograph"
+          src={proudctImage}
+          alt=""
+          label=""
           className="story-section__art"
         />
         <p className="story-section__image-note">
