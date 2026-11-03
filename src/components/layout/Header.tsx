@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, ShoppingBag, X } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
 import { useCart } from "@/components/cart/CartContext";
@@ -21,12 +22,17 @@ export function Header() {
         onClick={closeMenu}
         aria-label="EKA home"
       >
-        <span className="wordmark__seal" aria-hidden="true">
-          E
-        </span>
+        {/* <span className="wordmark__seal" aria-hidden="true"> */}
+
+        {/* </span> */}
         <span className="wordmark__copy">
-          <strong>EKA</strong>
-          <small>The taste of real Kerala</small>
+          <Image
+            src="/logo/eka-logo.png"
+            alt=""
+            width={70}
+            height={40}
+            priority
+          />
         </span>
       </a>
       <button

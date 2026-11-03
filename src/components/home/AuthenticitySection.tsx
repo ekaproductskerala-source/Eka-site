@@ -1,4 +1,5 @@
 import { Droplets, Flower2, Sun, Waves } from "lucide-react";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const characteristics = [
@@ -38,7 +39,13 @@ export function AuthenticitySection() {
           description="Traditional coconut oil can look and feel a little different from one temperature, coconut, or preparation to the next."
         />
         <span className="nature-section__mark" aria-hidden="true">
-          E<span>✳</span>
+          <Image
+            className="nature-section__logo"
+            src="/logo/eka-logo.png"
+            alt=""
+            width={90}
+            height={52}
+          />
         </span>
       </div>
       <div className="nature-grid">

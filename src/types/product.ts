@@ -1,3 +1,5 @@
+import type { StaticImageData } from "next/image";
+
 export interface ProductVariant {
   id: string;
   volumeMl: number;
@@ -9,7 +11,7 @@ export interface Product {
   id: string;
   name: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   imageAlt: string;
   variants: ProductVariant[];
 }

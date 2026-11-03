@@ -1,4 +1,4 @@
-import { CookingPot, Flower2, Hand, LampDesk } from "lucide-react";
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const uses = [
@@ -6,28 +6,32 @@ const uses = [
     number: "01",
     title: "In the kitchen",
     text: "A familiar companion for everyday Kerala cooking.",
-    icon: CookingPot,
+    image: "/images/use-kitchen.png",
+    imageAlt: "Coconut oil used in Kerala cooking",
     tone: "cooking",
   },
   {
     number: "02",
     title: "Hair care rituals",
     text: "Part of traditional hair-oiling routines across generations.",
-    icon: Flower2,
+    image: "/images/use-hair.png",
+    imageAlt: "Coconut oil used in a hair care ritual",
     tone: "hair",
   },
   {
     number: "03",
     title: "A moment of care",
     text: "Used in traditional body massage and everyday self-care.",
-    icon: Hand,
+    image: "/images/use-care.png",
+    imageAlt: "Coconut oil used for personal care",
     tone: "care",
   },
   {
     number: "04",
     title: "For the evening lamp",
     text: "A place in traditional lamp-lighting and ceremonial moments.",
-    icon: LampDesk,
+    image: "/images/use-lamp.png",
+    imageAlt: "Coconut oil used in a traditional evening lamp",
     tone: "lamp",
   },
 ];
@@ -51,12 +55,16 @@ export function UsesSection() {
         </p>
       </div>
       <div className="uses-grid">
-        {uses.map(({ number, title, text, icon: Icon, tone }) => (
+        {uses.map(({ number, title, text, image, imageAlt, tone }) => (
           <article className={`use-tile use-tile--${tone}`} key={number}>
             <div className="use-tile__art">
-              <span className="use-tile__sun" aria-hidden="true" />
-              <Icon size={38} strokeWidth={1.2} aria-hidden="true" />
-              <small>EKA PHOTO TO COME</small>
+              <Image
+                className="use-tile__image"
+                src={image}
+                alt={imageAlt}
+                fill
+                sizes="(max-width: 760px) 100vw, 25vw"
+              />
             </div>
             <div className="use-tile__copy">
               <span>{number}</span>

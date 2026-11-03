@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { ArtPlaceholder } from "@/components/home/ArtPlaceholder";
-
+import proudctImage from "../../../public/images/product-home-3.png";
 export function HeroSection() {
   return (
     <section className="hero page-gutter" aria-labelledby="hero-title">
@@ -37,9 +37,9 @@ export function HeroSection() {
       </div>
       <div className="hero__visual">
         <ArtPlaceholder
-          src="/images/eka-hero-placeholder.svg"
-          alt="Illustrated placeholder showing a traditional brass uruli with coconut oil and coconuts"
-          label="Illustration placeholder — replace with EKA process photography"
+          src={proudctImage}
+          alt=""
+          label=""
           className="hero__art"
           priority
         />

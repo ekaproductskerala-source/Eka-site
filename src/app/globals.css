@@ -2,16 +2,16 @@
 
 :root {
   color-scheme: light;
-  --leaf: #244d3a;
-  --leaf-dark: #18372a;
-  --leaf-soft: #e7e9dc;
-  --ivory: #f4f0e6;
-  --paper: #fbf9f3;
-  --ink: #342b22;
-  --muted: #736b5e;
-  --gold: #aa8750;
-  --line: #ddd5c4;
-  --clay: #a75e42;
+  --leaf: #21170d;
+  --leaf-dark: #21170d;
+  --leaf-soft: #fff0bd;
+  --ivory: #fff2d5;
+  --paper: #fffaf1;
+  --ink: #21170d;
+  --muted: #6d6255;
+  --gold: #ffc400;
+  --line: #e8d8b5;
+  --clay: #e96d00;
   --serif:
     "Iowan Old Style", "Baskerville", "Palatino Linotype", "Book Antiqua",
     Georgia, serif;
@@ -81,7 +81,7 @@ button {
   text-align: center;
 }
 .announcement span {
-  color: #c9ad70;
+  color: var(--gold);
   font-size: 12px;
 }
 .site-header {
@@ -117,8 +117,8 @@ button {
 }
 .wordmark__copy {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 10px;
   line-height: 1;
 }
 .wordmark__copy strong {
@@ -129,7 +129,6 @@ button {
   letter-spacing: 1.2px;
 }
 .wordmark__copy small {
-  margin-top: 5px;
   color: var(--muted);
   font-size: 8px;
   letter-spacing: 0.7px;
@@ -277,7 +276,7 @@ button {
   left: -320px;
   width: 630px;
   height: 630px;
-  border: 1px solid rgb(170 135 80 / 14%);
+  border: 1px solid rgb(255 196 0 / 18%);
   border-radius: 50%;
   content: "";
 }
@@ -377,7 +376,8 @@ button {
   background: #d5c8ab;
 }
 .art-placeholder > img {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 .art-placeholder figcaption {
   position: absolute;
@@ -602,7 +602,7 @@ button {
   height: 100%;
 }
 .product-card__image > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .product-card__edition {
   position: absolute;
@@ -750,7 +750,7 @@ button {
   color: #f5f0e4;
 }
 .why-section .section-heading__description {
-  color: #d1d8ca;
+  color: #e9dcc2;
 }
 .why-section .eyebrow {
   color: #d9bd7b;
@@ -822,13 +822,13 @@ button {
 .reason p {
   max-width: 225px;
   margin: 0;
-  color: #d3d6c9;
+  color: #e9dcc2;
   font-size: 11px;
   line-height: 1.8;
 }
 .why-section__note {
   margin: 12px 0 0;
-  color: #b9c6b4;
+  color: #d9c8a9;
   font-size: 9px;
 }
 .process-section {
@@ -877,19 +877,21 @@ button {
   z-index: 1;
 }
 .process-step__visual {
+  position: relative;
   aspect-ratio: 1.2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 15px;
+  overflow: hidden;
   border: 1px solid #ddd4c2;
   color: var(--leaf);
   background: #f0ede3;
 }
 .process-step:nth-child(2) .process-step__visual,
 .process-step:nth-child(4) .process-step__visual {
-  background: #e7e7d9;
+  background: #fff0c7;
 }
 .process-step:nth-child(3) .process-step__visual {
   color: #98573c;
@@ -903,6 +905,10 @@ button {
   color: #776d5e;
   font-size: 7px;
   letter-spacing: 0.8px;
+}
+.process-step__image {
+  object-fit: cover;
+  object-position: center;
 }
 .process-step__number {
   display: inline-block;
@@ -964,11 +970,13 @@ button {
 .use-tile__art {
   height: 205px;
   position: relative;
-  display: grid;
-  place-items: center;
   overflow: hidden;
   color: var(--leaf);
   background: #d9d6c2;
+}
+.use-tile__image {
+  object-fit: contain;
+  object-position: center;
 }
 .use-tile__art::after {
   position: absolute;
@@ -988,7 +996,7 @@ button {
 .use-tile__art svg {
   position: relative;
   z-index: 1;
-  color: #35553f;
+  color: #a64c00;
 }
 .use-tile__art small {
   position: absolute;
@@ -1000,13 +1008,13 @@ button {
   letter-spacing: 0.8px;
 }
 .use-tile--cooking .use-tile__art {
-  background: #ccd2b7;
+  background: #ffe6a3;
 }
 .use-tile--hair .use-tile__art {
   background: #d9c4a4;
 }
 .use-tile--care .use-tile__art {
-  background: #c8d0c1;
+  background: #f6d5aa;
 }
 .use-tile--lamp .use-tile__art {
   background: #d9c9a7;
@@ -1062,13 +1070,9 @@ button {
   font-size: 64px;
   line-height: 1;
 }
-.nature-section__mark span {
-  position: absolute;
-  top: 11px;
-  right: 13px;
-  color: var(--clay);
-  font-family: var(--sans);
-  font-size: 19px;
+.nature-section__logo {
+  width: min(90px, 72%);
+  height: auto;
 }
 .nature-grid {
   display: grid;
@@ -1143,7 +1147,7 @@ button {
   color: #f6f0e3;
 }
 .contact-section .section-heading__description {
-  color: #cdd4c6;
+  color: #e9dcc2;
 }
 .contact-section .eyebrow {
   color: #dfc27d;
@@ -1167,7 +1171,7 @@ button {
   color: #dfc77e;
 }
 .contact-detail > div > span {
-  color: #b7c2b3;
+  color: #d9c8a9;
   font-size: 8px;
   letter-spacing: 1px;
 }
@@ -1183,7 +1187,7 @@ button {
 }
 .contact-section__pending {
   max-width: 330px;
-  color: #cdd4c6;
+  color: #e9dcc2;
   font-size: 12px;
   line-height: 1.8;
 }
@@ -1195,7 +1199,7 @@ button {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #aab8a8;
+  color: #d9c8a9;
   font-size: 7px;
   letter-spacing: 0.9px;
 }
@@ -1212,7 +1216,7 @@ button {
 }
 .site-footer {
   color: #eee8d9;
-  background: #152d23;
+  background: var(--leaf-dark);
 }
 .site-footer__main {
   display: grid;
@@ -1228,11 +1232,11 @@ button {
   color: #f2ead9;
 }
 .wordmark--footer .wordmark__copy small {
-  color: #bcc3b5;
+  color: #d9c8a9;
 }
 .site-footer__brand p {
   margin: 17px 0 0;
-  color: #c1c6b8;
+  color: #e9dcc2;
   font-family: var(--serif);
   font-size: 14px;
   line-height: 1.7;
@@ -1242,7 +1246,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  color: #c8cbbf;
+  color: #e9dcc2;
   font-size: 10px;
 }
 .site-footer__label {
@@ -1256,7 +1260,7 @@ button {
   color: #f1d997;
 }
 .site-footer__legal small {
-  color: #829185;
+  color: #d9c8a9;
   font-size: 8px;
 }
 .site-footer__bottom {
@@ -1266,7 +1270,7 @@ button {
   justify-content: space-between;
   gap: 18px;
   border-top: 1px solid rgb(238 232 217 / 15%);
-  color: #aeb7a9;
+  color: #d9c8a9;
   font-size: 8px;
   letter-spacing: 0.35px;
 }
@@ -1969,11 +1973,6 @@ button {
     height: 67px;
     margin-top: 10px;
     font-size: 37px;
-  }
-  .nature-section__mark span {
-    top: 5px;
-    right: 6px;
-    font-size: 12px;
   }
   .nature-grid {
     grid-template-columns: 1fr 1fr;
